@@ -145,7 +145,7 @@ class Bj
             :tag => "",
             :is_restartable => true,
             :submitter => Bj.hostname,
-            :submitted_at => Time.now, 
+            :submitted_at => Time.now.utc,
           }
         end
       end
@@ -171,7 +171,7 @@ class Bj
           stdin = job.stdin || ''
           stdout = job.stdout || ''
           stderr = job.stderr || ''
-          started_at = Time.now
+          started_at = Time.now.utc
 
           job.state = "starting"
           job.save!
@@ -191,7 +191,7 @@ class Bj
           exit_status = thread.value
 
           job.state = "finished"
-          job.finished_at = Time.now
+          job.finished_at = Time.now.utc
           job.stdout = stdout
           job.stderr = stderr
           job.exit_status = exit_status
