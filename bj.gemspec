@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
      "lib/bj/stdext.rb",
      "lib/bj/table.rb",
      "lib/bj/util.rb",
+     "pkg/bj-1.2.0.gem",
      "plugin/HISTORY",
      "plugin/README",
      "plugin/Rakefile",
@@ -2284,16 +2285,16 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<main>, [">= 2.8.5"])
+      s.add_runtime_dependency(%q<main>, [">= 2.6.0"])
       s.add_runtime_dependency(%q<systemu>, [">= 1.2.0"])
       s.add_runtime_dependency(%q<orderedhash>, [">= 0.0.3"])
     else
-      s.add_dependency(%q<main>, [">= 2.8.5"])
+      s.add_dependency(%q<main>, [">= 2.6.0"])
       s.add_dependency(%q<systemu>, [">= 1.2.0"])
       s.add_dependency(%q<orderedhash>, [">= 0.0.3"])
     end
   else
-    s.add_dependency(%q<main>, [">= 2.8.5"])
+    s.add_dependency(%q<main>, [">= 2.6.0"])
     s.add_dependency(%q<systemu>, [">= 1.2.0"])
     s.add_dependency(%q<orderedhash>, [">= 0.0.3"])
   end
