@@ -46,7 +46,7 @@ Main {
     In addition the background runner process logs all commands run and their
     exit_status to a log named using the following convention:
     
-      rails_root/log/bj.#{ HOSTNAME }.#{ RAILS_ENV }.log
+      rails_root/log/bj.\#{ HOSTNAME }.\#{ RAILS_ENV }.log
     
     Bj allows you to submit jobs to multiple databases; for instance, if your
     application is running in development mode you may do:
