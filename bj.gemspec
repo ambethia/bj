@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Ara T. Howard"]
   s.date = %q{2009-09-23}
   s.default_executable = %q{bj}
+  s.description = %q{Backgroundjob (Bj) is a brain dead simple, zero admin, background priority queue for Rails.}
   s.email = %q{ara.t.howard@gmail.com}
   s.executables = ["bj"]
   s.extra_rdoc_files = [
@@ -21,6 +22,7 @@ Gem::Specification.new do |s|
     "HISTORY",
      "LICENSE",
      "README",
+     "Rakefile",
      "TODO",
      "VERSION",
      "bin/bj",
@@ -46,7 +48,6 @@ Gem::Specification.new do |s|
      "plugin/tasks/bj_tasks.rake",
      "plugin/test/bj_test.rb",
      "plugin/uninstall.rb",
-     "rakefile",
      "spec/bj.rb",
      "spec/helper.rb",
      "spec/rails_root/README",
